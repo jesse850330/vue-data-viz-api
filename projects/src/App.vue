@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <router-link v-bind:to="'/'">Home</router-link>
-    <router-link v-bind:to="'/about'">About</router-link>
-    <router-link v-bind:to="'/admin'">Admin</router-link>
-    <router-link v-bind:to="'/login'">Login</router-link>
+    <router-link v-bind:to="'/library'">Library</router-link>
     <router-view></router-view>
   </div>
 </template>
