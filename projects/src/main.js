@@ -18,30 +18,27 @@ Vue.use(VueResource)
 Vue.use(VueFire)
 
 
-import Hello from './components/Hello'
-import About from './components/About'
-import Login from './components/Login'
-import Admin from './components/Admin'
-import Posts from './components/Posts'
-import Comments from './components/Comments'
+import Jay from './components/Jay/Jay'
+import Jesse from './components/Jesse/Jesse'
+import Tilly from './components/Tilly/Tilly'
+import Vignesh from './components/Vignesh/Vignesh'
 
 const routes = [
-  { path: '/', component: Hello },
-  { path: '/about', component: About },
-  { path: '/login', component: Login },
-  {
-    path: '/admin', component: Admin,
-    children: [
-      {
-        path: '/',
-        component: Posts
-      },
-      {
-        path: 'comments',
-        component: Comments
-      }
-    ]
-  }
+  { path: '/', component: Jay },
+  { path: '/library', component: Vignesh },
+  // {
+  //   path: '/admin', component: Admin,
+  //   children: [
+  //     {
+  //       path: '/',
+  //       component: Posts
+  //     },
+  //     {
+  //       path: 'comments',
+  //       component: Comments
+  //     }
+  //   ]
+  // }
 ];
 
 const router = new VueRouter({
